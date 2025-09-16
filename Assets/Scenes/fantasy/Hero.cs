@@ -1,6 +1,6 @@
 
 using UnityEngine;
- public class Hero
+ public class Hero : MonoBehaviour
 {
     //Attributes
     private string name;
@@ -43,16 +43,18 @@ using UnityEngine;
 
 
     //create an object
-    public Hero(string newName, int newHp, int newAttackPower)
+    public void Init(string newName, int newHp, int newAttackPower)
     {
         Name = newName;
         Health = newHp;
         Gold = 0;
         AttackPower = newAttackPower;
     }
+    //Init
+
     public void ShowStute()
     {
-        Debug.Log($"Hero name : {Name} | Hero health : {Health} | Gold : {Gold}");
+        Debug.Log($"Hero name : {Name} | Hero health : {Health}|AttackPower : {AttackPower} | Gold : {Gold}");
     }
 
 

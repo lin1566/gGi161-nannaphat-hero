@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Main : MonoBehaviour
 {
-    private List<monsters> monsters = new List<monsters>();
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Hero hero1 ;
+    public List< monsters> monstersPrefab;
     void Start()
     {
-        Hero hero = new Hero("Himmel", 100, 100);
-        Hero hero1 = new Hero("John", 1000, 100);
+        hero1.Init("Bocchi Yusha",50,10);
+        hero1.ShowStute();
+        /* Hero hero = new Hero("bocchi yusha", 100, 100);
+        Hero hero1 = new Hero("Nichiga Evil", 1000, 100);
 
         
         monsters monster = new monsters("Orc", 100, 10 , 20);
@@ -45,7 +46,7 @@ public class Main : MonoBehaviour
 
         hero.ShowStute();
         monster.Attack(hero);
-        hero.ShowStute();
+        hero.ShowStute();*/
 
 
     }

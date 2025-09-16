@@ -1,6 +1,6 @@
 using UnityEngine;
 
-    public class monsters
+    public class monsters : MonoBehaviour
 {
     private string name;
     public string Name
@@ -78,5 +78,5 @@ using UnityEngine;
     {
         return lootReward;
     }
-
+   public monsters Monster;
 }
