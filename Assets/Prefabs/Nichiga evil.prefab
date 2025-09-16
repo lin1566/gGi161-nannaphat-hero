@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1964637603768211709, guid: 883dea4027e18434e8d66d9fba40265d, type: 3}
       propertyPath: m_Name
-      value: Monster
+      value: Nichiga evil
       objectReference: {fileID: 0}
     - target: {fileID: 8857739774847761932, guid: 883dea4027e18434e8d66d9fba40265d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8857739774847761932, guid: 883dea4027e18434e8d66d9fba40265d, type: 3}
       propertyPath: m_LocalPosition.y

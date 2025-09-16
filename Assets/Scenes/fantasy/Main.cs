@@ -5,11 +5,56 @@ using UnityEngine;
 public class Main : MonoBehaviour
 {
     public Hero hero1 ;
-    public List< monsters> monstersPrefab;
+    public List< monsters> monstersPrefab;//for monster
+    public List< monsters> Monsters = new List<monsters>();//monster
+    public monsters cerrentmonster;
     void Start()
     {
         hero1.Init("Bocchi Yusha",50,10);
         hero1.ShowStute();
+
+        cerrentmonster = Instantiate(monstersPrefab[0]);
+        cerrentmonster.initmon("Nichiga evil",10,20,20);
+        Monsters.Add(cerrentmonster);
+        cerrentmonster.ShowStute();
+
+        cerrentmonster =  Instantiate(monstersPrefab[1]);
+        cerrentmonster.initmon("Dragon yamada",20,20,15);
+        Monsters.Add(cerrentmonster);
+        cerrentmonster.ShowStute();
+
+        cerrentmonster =  Instantiate(monstersPrefab[2]);
+        cerrentmonster.initmon("Bigdoor kita",30,20,50);
+        Monsters.Add(cerrentmonster);
+        cerrentmonster.ShowStute();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         /* Hero hero = new Hero("bocchi yusha", 100, 100);
         Hero hero1 = new Hero("Nichiga Evil", 1000, 100);
 
